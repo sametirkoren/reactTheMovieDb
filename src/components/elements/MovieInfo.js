@@ -36,7 +36,7 @@ const MovieInfo = ({ movie }) => (
             <div className="score">{movie.vote_average}</div>
           </div>
           <div className="director">
-            <h3>YÖNETMEN{movie.directors.length > 1 ? "S" : ""}</h3>
+            <h3>YÖNETMEN{movie.directors.length > 1 ? "LER" : ""}</h3>
             {movie.directors.map(element=>(
                 <p key={element.credit_id}>{element.name}</p>
             ))}
