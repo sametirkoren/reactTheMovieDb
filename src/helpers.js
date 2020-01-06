@@ -2,7 +2,7 @@
 export const calcTime = time => {
   const hours = Math.floor(time / 60);
   const mins = time % 60;
-  return `${hours}h ${mins}m`;
+  return `${hours} Saat ${mins} Dakika`;
 };
 // Convert a number to money formatting
 export const convertMoney = money => {
