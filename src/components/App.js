@@ -6,7 +6,7 @@ const App = () =>
 (
     <div>
         <Header/>
-        <Home/>
+        <Home/> 
     </div>
 )
 export default App;
