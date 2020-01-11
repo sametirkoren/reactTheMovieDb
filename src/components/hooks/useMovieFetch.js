@@ -11,10 +11,10 @@ export const useMovieFetch = movieId => {
         setLoading(true);
 
         try {
-            const endpoint = `${API_URL}movie/${movieId}?api_key=${API_KEY}`;
+            const endpoint = `${API_URL}movie/${movieId}?api_key=${API_KEY}&language=tr-TR`;
             const result = await(await fetch(endpoint)).json();
             console.log(result);
-            const creditsEndpoint = `${API_URL}movie/${movieId}/credits?api_key=${API_KEY}`;
+            const creditsEndpoint = `${API_URL}movie/${movieId}/credits?api_key=${API_KEY}&language=tr-TR`;
             const creditsResult = await(await fetch(creditsEndpoint)).json();
             console.log(creditsResult);
             const directors = creditsResult.crew.filter(

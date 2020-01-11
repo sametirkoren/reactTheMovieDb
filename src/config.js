@@ -5,8 +5,8 @@
 const API_URL = 'https://api.themoviedb.org/3/';
 const API_KEY = 'bcea853d51668c75308483221dba68a8';
 
-const SEARCH_BASE_URL = `${API_URL}search/movie?api_key=${API_KEY}&query=`;
-const POPULAR_BASE_URL = `${API_URL}movie/popular?api_key=${API_KEY}`;
+const SEARCH_BASE_URL = `${API_URL}search/movie?api_key=${API_KEY}&query=&language=tr-TR`;
+const POPULAR_BASE_URL = `${API_URL}movie/popular?api_key=${API_KEY}&language=tr-TR`;
 
 const IMAGE_BASE_URL = 'http://image.tmdb.org/t/p/';
 // Sizes: w300, w780, w1280, original
